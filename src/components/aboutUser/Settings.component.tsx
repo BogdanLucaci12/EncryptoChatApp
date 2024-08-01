@@ -35,7 +35,7 @@ const Settings = ({profilePictures, displayName, setOpen}:SettingsProps) => {
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         }
-    }, [containerRef]);
+    }, [containerRef, setOpen]);
 
     return (
         <div 
